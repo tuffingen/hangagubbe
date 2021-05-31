@@ -48,7 +48,9 @@ public class Hangmain {
                     letters[i] = l;
                     isCorrect = true;
                 }
-
+            }
+            if(!isCorrect){
+                liv = liv -1;
             }
 
             System.out.println("----------------");
