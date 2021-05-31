@@ -7,6 +7,9 @@ public class Hangmain {
         String[] ord = new String[]{"elefant", "kattspya", "potatis", "kanonkula"};
 
         String randomWord = ord[(int) Math.random() * ord.length];
+
+        System.out.println("ordet har " + randomWord.length() + " bokstäver.");
+
         char[] letters = new char[randomWord.length()];
 
         for (int i = 0; i < letters.length; i++) {
