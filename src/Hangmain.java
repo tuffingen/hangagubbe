@@ -20,14 +20,14 @@ public class Hangmain {
         Scanner scanner = new Scanner(System.in);
 
         while (liv > 0) {
-            System.out.print("Liv");
+            System.out.print("Liv: ");
 
             for (int i = 0; i < liv; i++) {
-                System.out.print("0");
+                System.out.print("<3 ");
             }
             System.out.println();
 
-            System.out.println("Skriv: ");
+            System.out.println("Input: ");
             String input = scanner.nextLine();
             char letter = input.charAt(0);
 
@@ -38,6 +38,18 @@ public class Hangmain {
             }
 
             System.out.println();
+
+            for (int i = 0; i < randomWord.length(); i++) {
+                char l = randomWord.charAt(i);
+
+                if (l ==letter){
+                    letters[i] = l;
+                }
+
+            }
+
+            System.out.println("----------------");
         }
+        System.out.println("stänger av spelet");
     }
 }
