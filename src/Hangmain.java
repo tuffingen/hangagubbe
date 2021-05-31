@@ -39,11 +39,14 @@ public class Hangmain {
 
             System.out.println();
 
+            boolean isCorrect = false;
+
             for (int i = 0; i < randomWord.length(); i++) {
                 char l = randomWord.charAt(i);
 
                 if (l ==letter){
                     letters[i] = l;
+                    isCorrect = true;
                 }
 
             }
