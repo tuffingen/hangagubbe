@@ -7,22 +7,22 @@ public class Hangmain {
         String[] ord = new String[]{"elefant", "kattspya", "potatis", "kanonkula"};
 
         String randomWord = ord[(int) Math.random() * ord.length];
-        char[] letters = new char [randomWord.length()];
+        char[] letters = new char[randomWord.length()];
 
         for (int i = 0; i < letters.length; i++) {
             letters[i] = '.';
 
-            
+
         }
 
         int liv = 3;
 
         Scanner scanner = new Scanner(System.in);
 
-        while (liv > 0 ){
+        while (liv > 0) {
             System.out.print("Liv");
 
-            for (int i = 0; i<liv; i++){
+            for (int i = 0; i < liv; i++) {
                 System.out.print("0");
             }
             System.out.println();
@@ -30,6 +30,14 @@ public class Hangmain {
             System.out.println("Skriv: ");
             String input = scanner.nextLine();
             char letter = input.charAt(0);
+
+            System.out.print("ord: ");
+
+            for (int i = 0; i < letters[i]; i++) {
+                System.out.print(letters[i]);
+            }
+
+            System.out.println();
         }
     }
 }
